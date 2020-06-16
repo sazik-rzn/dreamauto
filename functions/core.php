@@ -11,8 +11,8 @@ class Core
 
     public function getUrl()
     {
-        if (isset($_SERVER['PATH_INFO'])) {
-            $expl = explode('/', $_SERVER['PATH_INFO']);
+        if (isset($_SERVER['REQUEST_URI'])) {
+            $expl = explode('/', $_SERVER['REQUEST_URI']);
             if (isset($expl[1])) {
                 return $expl[1];
             }
