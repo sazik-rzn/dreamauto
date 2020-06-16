@@ -12,9 +12,9 @@ class Core
     public function getUrl()
     {
         if (isset($_SERVER['REQUEST_URI'])) {
-            $expl = explode('/', $_SERVER['REQUEST_URI']);
-            $expl = explode('?', $expl);
-            if (isset($expl[0])) {
+            $expl = explode('/', $_SERVER['REQUEST_URI']);            
+            if (isset($expl[1])) {
+                $expl = explode('?', $expl[1]);
                 return $expl[0];
             }
         }
