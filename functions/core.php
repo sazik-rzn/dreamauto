@@ -13,8 +13,9 @@ class Core
     {
         if (isset($_SERVER['REQUEST_URI'])) {
             $expl = explode('/', $_SERVER['REQUEST_URI']);
-            if (isset($expl[1])) {
-                return $expl[1];
+            $expl = explode('?', $expl);
+            if (isset($expl[0])) {
+                return $expl[0];
             }
         }
         return 'main';
