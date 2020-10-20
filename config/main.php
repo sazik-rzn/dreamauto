@@ -1,7 +1,7 @@
 <?php
 return [
     'title' => 'Техцентр',
-    'site_url' => 'https://zagranavto.com',
+    'site_url' => 'https://xn----8sbgfuyrkx.xn--p1ai/',
     'site_name' => 'ДримАвто',
     'author' => 'Luxul Solutions LLC',
     'description' => 'Техцентр ДримАвто Рязань - полный спектр услуг в области обслуживания авто и мото техники',
